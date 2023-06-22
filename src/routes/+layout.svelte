@@ -3,7 +3,9 @@
         <a href="/" сlass="nav-logo" title="Back to Homepage">Королев Павел</a>
         <div class="nav-links">
             {#each nav as link}
+            {#if link.isShow}
                 <a href={link.href} class="link">{link.title}</a>
+                {/if}
             {/each}
         </div>
     </div>
