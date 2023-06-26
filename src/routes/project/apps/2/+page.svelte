@@ -6,6 +6,7 @@
     <!-- svelte-ignore a11y-label-has-associated-control -->
     <label>Цена:</label>
     <input type="text">
+    <button on:click={addExpense}><span>Добавить</span></button>
   </form>
 <table>
     <thead>
