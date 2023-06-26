@@ -2,10 +2,10 @@
 <form>
     <!-- svelte-ignore a11y-label-has-associated-control -->
     <label>Название:</label>
-    <input type="text">
+    <input bind:value={newName} type="text" placeholder="Хлеб">
     <!-- svelte-ignore a11y-label-has-associated-control -->
     <label>Цена:</label>
-    <input type="text">
+    <input bind:value={newAmount} type="text" placeholder="50">
     <button on:click={addExpense}><span>Добавить</span></button>
   </form>
 <table>
