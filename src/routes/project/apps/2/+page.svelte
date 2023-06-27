@@ -69,17 +69,26 @@
         margin-top: 20px;
         border-collapse: collapse;
         width: 100%;
-    }
+        font-family: "Lucida Sans Unicode", "Lucida Grande", Sans-Serif;
+        font-size: 14px;
+        text-align: left;
+        border-radius: 20px;
+        box-shadow: 0 0 0 10px #F2906B;
+        color: #452F21;
+}
 
     th,
     td {
         border: 1px solid #ccc;
         padding: 8px;
         text-align: left;
+        border-top: 10px solid #F2906B;
+    background: white;
     }
     
     th {
-        background-color: #eee;
+        background-color: white;
+        padding: 10px 8px;
     }
 
     button {
@@ -93,5 +102,18 @@
     h1 {
         font-size: 24px;
         margin-bottom:20px;
+    }
+
+    table th:first-child {
+        border-top-left-radius: 20px;
+    }
+    table th:last-child {
+        border-top-right-radius: 20px;
+    }
+    table td:first-child {
+        border-bottom-left-radius: 20px;
+    }
+    table td:last-child {
+        border-bottom-right-radius: 20px;
     }
 </style>
